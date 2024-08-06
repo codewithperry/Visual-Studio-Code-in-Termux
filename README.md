@@ -26,13 +26,11 @@ This tutorial explains the steps to run Visual Studio Code directly on your phon
 ## Additional Resources
 
 - [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
-- [GitBook Documentation](https://docs.gitbook.com/)
+
 
 ## Feedback
 
-If you encounter any issues or have suggestions, please reach out to us at [support@example.com](mailto:support@example.com).
+If you encounter any issues or have suggestions, please reach out to us at [support@example.com](codewithperry@gmail.com).
 
-## License
 
-This tutorial is provided under the [MIT License](LICENSE).
 
