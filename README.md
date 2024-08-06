@@ -9,7 +9,7 @@ This tutorial explains the steps to run Visual Studio Code directly on your phon
 ## Setup Instructions
 
 1. **Access the Guide**:
-   Visit the [Visual Studio Code Inside Phone Guide](https://perrys-organization-2.gitbook.io/vscinsidephone#run-visual-studio-code) for detailed instructions and screenshots.
+   Visit the [Visual Studio Code Inside Phone Guide](https://perrys-organization-2.gitbook.io/vscinsidephone) for detailed instructions and screenshots.
 
 2. **Prerequisites**:
    Ensure you have the following before you start:
