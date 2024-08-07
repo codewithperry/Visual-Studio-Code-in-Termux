@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install VS Code on Android</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Install VS Code on Android</h1>
+    </header>
+    <main class="main-content">
+        <section>
+            <h2>Prerequisites</h2>
+            <ul>
+                <li>Android device</li>
+                <li>Termux installed</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Steps</h2>
+            <ol>
+                <li><strong>Install Termux</strong>: Download and install Termux from the Google Play Store or F-Droid.</li>
+                <li><strong>Update and Upgrade Packages</strong>:
+                    <div class="code-block">
+                        <pre><code>pkg update && pkg upgrade -y
+pkg install proot-distro -y</code></pre>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>
+                </li>
+                <li><strong>Install Arch Linux</strong>:
+                    <div class="code-block">
+                        <pre><code>proot-distro install archlinux</code></pre>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>
+                </li>
+                <li><strong>Login into Arch Linux</strong>:
+                    <div class="code-block">
+                        <pre><code>proot-distro login archlinux</code></pre>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>
+                </li>
+                <li><strong>Install Git, OpenSSH, and Base-devel</strong>:
+                    <div class="code-block">
+                        <pre><code>pacman -Syu base-devel git openssh</code></pre>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>
+                </li>
+                <li><strong>Download Visual Studio Code CLI</strong>:
+                    <p>For 64-bit devices:</p>
+                    <div class="code-block">
+                        <pre><code>curl -L https://update.code.visualstudio.com/latest/cli-linux-arm64/stable | bsdtar -xf - -C /usr/local/bin</code></pre>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>
+                    <p>For 32-bit devices:</p>
+                    <div class="code-block">
+                        <pre><code>curl -L https://update.code.visualstudio.com/latest/cli-linux-armhf/stable | bsdtar -xf - -C /usr/local/bin</code></pre>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>
+                </li>
+                <li><strong>Run Visual Studio Code (Online Version)</strong>:
+                    <div class="code-block">
+                        <pre><code>code tunnel</code></pre>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>
+                    <p><strong>Advantages:</strong> Accessible from anywhere.</p>
+                    <p><strong>Disadvantages:</strong> Slow and highly dependent on GitHub and Microsoft authentication.</p>
+                </li>
+                <li><strong>Run Visual Studio Code (Offline Version)</strong>:
+                    <div class="code-block">
+                        <pre><code>code serve-web --host 127.0.0.1</code></pre>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>
+                    <p><strong>Advantages:</strong> Fast and doesn't require any authentication.</p>
+                    <p><strong>Disadvantages:</strong> Runs on localhost and isn't accessible on remote devices, only on the device where the server is started.</p>
+                </li>
+            </ol>
+            <img src="assets/vscode.png" alt="VS Code Screenshot">
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter(X)</a> |
+            <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a> |
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        </div>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
